@@ -76,7 +76,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-au-1hW">
                                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
                                                                 <subviews>
-                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QjO-Cs-3lj">
+                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QjO-Cs-3lj" customClass="RoundedTextField" customModule="SocialApp" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="86V-fs-fbV"/>
@@ -85,7 +85,7 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
-                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-hD-1xo">
+                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-hD-1xo" customClass="RoundedTextField" customModule="SocialApp" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="40" width="374" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="baC-A1-ZCh"/>
@@ -96,13 +96,14 @@
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmp-WA-571">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmp-WA-571" customClass="RoundButton" customModule="SocialApp" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="90" width="374" height="30"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="eSU-V0-APM"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Sign In">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </state>
                                                             </button>
                                                         </subviews>

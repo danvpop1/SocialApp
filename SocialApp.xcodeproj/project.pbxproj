@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A2878E939491ECD87EAEB07D /* Pods_SocialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F894494FC3F1EB58ABF37370 /* Pods_SocialApp.framework */; };
+		ABB427671EF68D29004640E4 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB427661EF68D29004640E4 /* RoundButton.swift */; };
+		ABB4276A1EF68F3F004640E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB427691EF68F3F004640E4 /* Constants.swift */; };
+		ABB4276C1EF692CD004640E4 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB4276B1EF692CD004640E4 /* RoundedTextField.swift */; };
 		ABE58A681EF554D700A93794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE58A671EF554D700A93794 /* AppDelegate.swift */; };
 		ABE58A6A1EF554D700A93794 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE58A691EF554D700A93794 /* SignInVC.swift */; };
 		ABE58A6D1EF554D700A93794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE58A6B1EF554D700A93794 /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		4DFB19C5DA5341553C9EEFD4 /* Pods-SocialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialApp/Pods-SocialApp.debug.xcconfig"; sourceTree = "<group>"; };
+		ABB427661EF68D29004640E4 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		ABB427691EF68F3F004640E4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ABB4276B1EF692CD004640E4 /* RoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		ABE58A641EF554D700A93794 /* SocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE58A671EF554D700A93794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE58A691EF554D700A93794 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -61,6 +67,8 @@
 		ABB4275F1EF55817004640E4 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				ABB427661EF68D29004640E4 /* RoundButton.swift */,
+				ABB4276B1EF692CD004640E4 /* RoundedTextField.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -71,6 +79,14 @@
 				ABE58A691EF554D700A93794 /* SignInVC.swift */,
 			);
 			name = controller;
+			sourceTree = "<group>";
+		};
+		ABB427681EF68F15004640E4 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				ABB427691EF68F3F004640E4 /* Constants.swift */,
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 		ABE58A5B1EF554D700A93794 = {
@@ -94,6 +110,7 @@
 		ABE58A661EF554D700A93794 /* SocialApp */ = {
 			isa = PBXGroup;
 			children = (
+				ABB427681EF68F15004640E4 /* util */,
 				ABB427601EF5581C004640E4 /* controller */,
 				ABB4275F1EF55817004640E4 /* view */,
 				ABB4275E1EF55807004640E4 /* model */,
@@ -239,8 +256,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB427671EF68D29004640E4 /* RoundButton.swift in Sources */,
 				ABE58A6A1EF554D700A93794 /* SignInVC.swift in Sources */,
 				ABE58A681EF554D700A93794 /* AppDelegate.swift in Sources */,
+				ABB4276C1EF692CD004640E4 /* RoundedTextField.swift in Sources */,
+				ABB4276A1EF68F3F004640E4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

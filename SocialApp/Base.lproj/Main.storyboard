@@ -69,6 +69,9 @@
                                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="4au-do-rxo"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="fb-connect"/>
+                                                        <connections>
+                                                            <action selector="facebookLoginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fq4-La-FQa"/>
+                                                        </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YZS-X3-qgl">
                                                         <rect key="frame" x="0.0" y="90" width="374" height="120"/>

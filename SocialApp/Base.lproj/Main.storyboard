@@ -108,6 +108,9 @@
                                                                 <state key="normal" title="Sign In">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="emailLoginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKz-VH-7Lw"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -179,10 +182,33 @@
                             <constraint firstItem="fRI-z2-j3g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mMQ-sP-mWm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="QjO-Cs-3lj" id="v3Z-ck-clg"/>
+                        <outlet property="passwordTextField" destination="Igh-hD-1xo" id="nbC-d2-Mjv"/>
+                        <segue destination="52s-C5-vDY" kind="show" identifier="goToFeed" id="rIP-NW-uHv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="136.95652173913044"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="cY6-cA-erE">
+            <objects>
+                <viewController id="52s-C5-vDY" customClass="FeedVC" customModule="SocialApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LVk-W5-ie5"/>
+                        <viewControllerLayoutGuide type="bottom" id="WMu-hf-jIw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bXq-Qc-wHF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHN-FS-sKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="137"/>
         </scene>
     </scenes>
     <resources>

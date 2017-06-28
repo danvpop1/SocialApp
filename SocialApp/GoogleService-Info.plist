@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>692016290656-835uski2rj08i5aobeeh1u7g96mcnpou.apps.googleusercontent.com</string>
+	<string>692016290656-ebl34f2jbn9oc2qdmqbc8qftf195b9jt.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.692016290656-835uski2rj08i5aobeeh1u7g96mcnpou</string>
+	<string>com.googleusercontent.apps.692016290656-ebl34f2jbn9oc2qdmqbc8qftf195b9jt</string>
 	<key>API_KEY</key>
 	<string>AIzaSyB1jbcB1kWPpGkO3_XADMrCrAL9uelqgns</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>test.SocialApp</string>
+	<string>org.brrazvan.SocialApp</string>
 	<key>PROJECT_ID</key>
 	<string>socialapp-b1d85</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:692016290656:ios:69d6b21ee7d483a3</string>
+	<string>1:692016290656:ios:51e6b45bda5e2e1b</string>
 	<key>DATABASE_URL</key>
 	<string>https://socialapp-b1d85.firebaseio.com</string>
 </dict>

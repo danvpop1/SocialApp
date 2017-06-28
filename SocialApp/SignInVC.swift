@@ -11,6 +11,7 @@ import FacebookLogin
 import FacebookCore
 import Firebase
 import SwiftKeychainWrapper
+import Foundation
 
 class SignInVC: UIViewController {
     
@@ -20,6 +21,7 @@ class SignInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        passwordTextField.isSecureTextEntry = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -81,10 +83,22 @@ class SignInVC: UIViewController {
         }
     }
     
-    func completeSignIn(id: String) {
+   private func completeSignIn(id: String) {
         KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("Data saved to keychain")
+        saveEmailAndPassword()
         performSegue(withIdentifier: "goToFeed", sender: nil)
+    }
+    
+    
+    private func saveEmailAndPassword() {
+        let username:String = emailTextField.text!
+        let password:String = passwordTextField.text!
+        let defaults = UserDefaults.standard
+        
+        defaults.set(username, forKey: "username")
+        defaults.set(password, forKey: "password")
+        print("Email and password saved to UserDefaults")
     }
     
 }

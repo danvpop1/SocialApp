@@ -53,7 +53,8 @@ class SignInVC: UIViewController {
             } else {
                 print("Sucessful sign in with firebase")
                 if let user = user {
-                    self.completeSignIn(id: user.uid)
+                    let userData = ["provider" : credential.provider]
+                    self.completeSignIn(id: user.uid, userData: userData)
                 }
             }
         }
@@ -65,8 +66,8 @@ class SignInVC: UIViewController {
                 if error == nil{
                     print("Email user authenticated with Firebase!")
                     if let user = user {
-                        self.completeSignIn(id: user.uid)
-                    }
+                        let userData = ["provider" : user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)                    }
                 } else {
                     Auth.auth().createUser(withEmail: email, password: password, completion: {(user, error) in
                         if error != nil {
@@ -74,8 +75,8 @@ class SignInVC: UIViewController {
                         } else {
                             print("Email user created and authenticated with Firebase!")
                             if let user = user {
-                                self.completeSignIn(id: user.uid)
-                            }
+                                let userData = ["provider" : user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)                            }
                         }
                     })
                 }
@@ -83,23 +84,15 @@ class SignInVC: UIViewController {
         }
     }
     
-   private func completeSignIn(id: String) {
+    private func completeSignIn(id: String, userData: Dictionary<String, String>) {
+    
+    DataService.ds.createFirebaseUser(uid: id, userData: userData)
+    
         KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("Data saved to keychain")
-        saveEmailAndPassword()
         performSegue(withIdentifier: "goToFeed", sender: nil)
     }
     
-    
-    private func saveEmailAndPassword() {
-        let username:String = emailTextField.text!
-        let password:String = passwordTextField.text!
-        let defaults = UserDefaults.standard
-        
-        defaults.set(username, forKey: "username")
-        defaults.set(password, forKey: "password")
-        print("Email and password saved to UserDefaults")
-    }
     
 }
 

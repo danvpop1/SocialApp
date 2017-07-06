@@ -14,6 +14,9 @@
 		ABB4276A1EF68F3F004640E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB427691EF68F3F004640E4 /* Constants.swift */; };
 		ABB4276C1EF692CD004640E4 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB4276B1EF692CD004640E4 /* RoundedTextField.swift */; };
 		ABBCDD451F00074C005C7811 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBCDD441F00074C005C7811 /* FeedVC.swift */; };
+		ABD6E09E1F03FE5100C096E0 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6E09D1F03FE5100C096E0 /* PostCell.swift */; };
+		ABD6E0A01F04082F00C096E0 /* ShadowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6E09F1F04082F00C096E0 /* ShadowedView.swift */; };
+		ABE490A11F0D467600A52200 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE490A01F0D467600A52200 /* DataService.swift */; };
 		ABE58A681EF554D700A93794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE58A671EF554D700A93794 /* AppDelegate.swift */; };
 		ABE58A6A1EF554D700A93794 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE58A691EF554D700A93794 /* SignInVC.swift */; };
 		ABE58A6D1EF554D700A93794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE58A6B1EF554D700A93794 /* Main.storyboard */; };
@@ -29,6 +32,9 @@
 		ABB427691EF68F3F004640E4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ABB4276B1EF692CD004640E4 /* RoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		ABBCDD441F00074C005C7811 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		ABD6E09D1F03FE5100C096E0 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		ABD6E09F1F04082F00C096E0 /* ShadowedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowedView.swift; sourceTree = "<group>"; };
+		ABE490A01F0D467600A52200 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		ABE58A641EF554D700A93794 /* SocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE58A671EF554D700A93794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE58A691EF554D700A93794 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -74,6 +80,8 @@
 				ABB427661EF68D29004640E4 /* RoundButton.swift */,
 				ABB4276B1EF692CD004640E4 /* RoundedTextField.swift */,
 				AB1CC1F41F014AF2008F5A80 /* RoundedImage.swift */,
+				ABD6E09D1F03FE5100C096E0 /* PostCell.swift */,
+				ABD6E09F1F04082F00C096E0 /* ShadowedView.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -93,6 +101,14 @@
 				ABB427691EF68F3F004640E4 /* Constants.swift */,
 			);
 			name = util;
+			sourceTree = "<group>";
+		};
+		ABE4909F1F0D465F00A52200 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				ABE490A01F0D467600A52200 /* DataService.swift */,
+			);
+			name = services;
 			sourceTree = "<group>";
 		};
 		ABE58A5B1EF554D700A93794 = {
@@ -116,6 +132,7 @@
 		ABE58A661EF554D700A93794 /* SocialApp */ = {
 			isa = PBXGroup;
 			children = (
+				ABE4909F1F0D465F00A52200 /* services */,
 				ABB427681EF68F15004640E4 /* util */,
 				ABB427601EF5581C004640E4 /* controller */,
 				ABB4275F1EF55817004640E4 /* view */,
@@ -263,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD6E0A01F04082F00C096E0 /* ShadowedView.swift in Sources */,
 				ABBCDD451F00074C005C7811 /* FeedVC.swift in Sources */,
 				ABB427671EF68D29004640E4 /* RoundButton.swift in Sources */,
 				AB1CC1F51F014AF2008F5A80 /* RoundedImage.swift in Sources */,
@@ -270,6 +288,8 @@
 				ABE58A681EF554D700A93794 /* AppDelegate.swift in Sources */,
 				ABB4276C1EF692CD004640E4 /* RoundedTextField.swift in Sources */,
 				ABB4276A1EF68F3F004640E4 /* Constants.swift in Sources */,
+				ABD6E09E1F03FE5100C096E0 /* PostCell.swift in Sources */,
+				ABE490A11F0D467600A52200 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

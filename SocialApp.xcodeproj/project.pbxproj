@@ -17,6 +17,7 @@
 		ABD6E09E1F03FE5100C096E0 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6E09D1F03FE5100C096E0 /* PostCell.swift */; };
 		ABD6E0A01F04082F00C096E0 /* ShadowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6E09F1F04082F00C096E0 /* ShadowedView.swift */; };
 		ABE490A11F0D467600A52200 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE490A01F0D467600A52200 /* DataService.swift */; };
+		ABE490A31F0E811B00A52200 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE490A21F0E811B00A52200 /* Post.swift */; };
 		ABE58A681EF554D700A93794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE58A671EF554D700A93794 /* AppDelegate.swift */; };
 		ABE58A6A1EF554D700A93794 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE58A691EF554D700A93794 /* SignInVC.swift */; };
 		ABE58A6D1EF554D700A93794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE58A6B1EF554D700A93794 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		ABD6E09D1F03FE5100C096E0 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		ABD6E09F1F04082F00C096E0 /* ShadowedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowedView.swift; sourceTree = "<group>"; };
 		ABE490A01F0D467600A52200 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		ABE490A21F0E811B00A52200 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		ABE58A641EF554D700A93794 /* SocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE58A671EF554D700A93794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE58A691EF554D700A93794 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		ABB4275E1EF55807004640E4 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				ABE490A21F0E811B00A52200 /* Post.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABD6E0A01F04082F00C096E0 /* ShadowedView.swift in Sources */,
+				ABE490A31F0E811B00A52200 /* Post.swift in Sources */,
 				ABBCDD451F00074C005C7811 /* FeedVC.swift in Sources */,
 				ABB427671EF68D29004640E4 /* RoundButton.swift in Sources */,
 				AB1CC1F51F014AF2008F5A80 /* RoundedImage.swift in Sources */,

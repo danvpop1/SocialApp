@@ -24,6 +24,5 @@ class RoundButton: UIButton {
         super.layoutSubviews()
         layer.cornerRadius = 5
     }
-    
 
 }

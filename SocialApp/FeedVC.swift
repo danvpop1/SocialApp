@@ -12,7 +12,6 @@ import SwiftKeychainWrapper
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
     @IBOutlet weak var tableView: UITableView!
     
     var posts = [Post]()
@@ -39,8 +38,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
             cell.configureCell(post: post)
             return cell;
-        }
-        else {
+        } else {
             return PostCell()
         }
     }
@@ -61,6 +59,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     }
                 }
             }
+            
             self.tableView.reloadData()
         })
     }

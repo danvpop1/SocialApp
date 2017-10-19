@@ -15,11 +15,9 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var captionText: UITextView!
     @IBOutlet weak var likesLabel: UILabel!
-   
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     func configureCell(post: Post){

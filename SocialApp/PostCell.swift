@@ -13,7 +13,7 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var postImageView: UIImageView!
-    @IBOutlet weak var captionText: UITextView!
+    @IBOutlet weak var captionTextView: UITextView!
     @IBOutlet weak var likesLabel: UILabel!
    
     

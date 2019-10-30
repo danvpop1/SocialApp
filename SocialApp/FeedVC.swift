@@ -28,7 +28,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
         let keychainResult =   KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("Keychain info: \(keychainResult)")
-        try! Auth.auth().signOut()
+        try? Auth.auth().signOut()
         performSegue(withIdentifier: "goToSignIn", sender: nil)
     }
     
@@ -41,7 +41,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return cell;
         }
         else {
-            return PostCell()
+            return UITableViewCell()
         }
     }
     

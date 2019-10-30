@@ -41,7 +41,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return cell;
         }
         else {
-            return PostCell()
+            return UITableViewCell()
         }
     }
     
